@@ -1,0 +1,28 @@
+
+#Install Anaconda if needed
+wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+bash Anaconda3-2019.07-Linux-x86_64.sh
+exit
+
+#Create env with all requirements
+conda create -n dd python=3.6 pytorch torchvision cudatoolkit=10.1 torchtext pyyaml nltk matplotlib scikit-image -c pytorch-nightly
+conda activate dd
+pip install sentencepiece 
+#Note: As of January 8 2020, torchvision is broken by pillow version 7.0.0 so add pillow=6.2.1 if needed
+
+
+#Clone the repo
+git clone https://github.com/ilia10000/dataset-distillation
+
+#Used only when performaing soft-label init experiments
+git clone https://github.com/ilia10000/soft-label-inits.git
+cd soft-label-inits
+unzip glove.zip
+mv glove.6B.50d.txt ../dataset-distillation
+cd ../dataset-distillation
+mkdir exp_scripts
+python gen_exps.py 
+
+#Otherwise use this to get glove vecs
+#wget http://nlp.stanford.edu/data/glove.6B.zip
+#unzip glove.6B.zip
