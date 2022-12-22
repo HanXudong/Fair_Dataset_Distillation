@@ -14,6 +14,22 @@ This dir includes source codes for reproducing our experimental results in paper
 - The text distillation is deployed based on https://github.com/ilia10000/dataset-distillation
 - The bias mitigation approaches are based on https://github.com/HanXudong/fairlib
 
+### Accessing Fairness 
+Fairness evaluation metrics are included in [Fair_Dataset_Distillation/fairness_src/evaluator](https://github.com/HanXudong/Fair_Dataset_Distillation/tree/main/fairness_src/evaluator).
+
+Since additional protected labels are required for fairness evaluation and bias mitigation, we provide example dataloaders in [Fair_Dataset_Distillation/fairness_src/dataloaders/](https://github.com/HanXudong/Fair_Dataset_Distillation/tree/main/fairness_src/dataloaders).
+
+### Preprocessing
+
+Similar to the implementation of fairlib, preprocessing approaches are combined with the [BaseDataset class](https://github.com/HanXudong/Fair_Dataset_Distillation/blob/main/datasets/utils.py), where the distributions of target labels and demographics are balanced. 
+
+### In-processing
+
+Adversarial training and fair contrastive learning are implemented in [Fair_Dataset_Distillation/fairness_src/networks/](https://github.com/HanXudong/Fair_Dataset_Distillation/tree/main/fairness_src/networks).
+
+The inclusion of in-processing methods aims at learning fairer synthetic datasets, which can be seen from [here](https://github.com/HanXudong/Fair_Dataset_Distillation/blob/e6db24bde81db038872e753631c1d49963c12c73/train_distilled_image.py#L158-L178).
+
+
 ## Scripts
 
 - To reproduce experimental results in this paper, please see the scripts in the `Fair_Dataset_Distillation\Scripts`. 
