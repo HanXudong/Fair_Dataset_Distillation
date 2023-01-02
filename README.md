@@ -5,7 +5,7 @@ Xudong Han, Aili Shen, Yitong Li, Lea Frermann, Timothy Baldwin, and Trevor Cohn
 
 ## Overview
 
-In this work, we first show that although dataset distillation preserves the bias of the dataset, and then propose a framework to combine existing debiaisng methods to produce models that are fair and accurate, at reduced training cost. 
+In this work, we first show that dataset distillation preserves the bias of the dataset, and then propose a framework to combine existing debiaisng methods to produce models that are fair and accurate, at reduced training cost. 
 
 
 ## Code
