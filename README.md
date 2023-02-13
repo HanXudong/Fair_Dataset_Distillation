@@ -1,7 +1,26 @@
 # Fair_Dataset_Distillation
 Source codes for SustaiNLP@EMNLP 2022 paper "Towards Fair Supervised Dataset Distillation for Text Classification"
 
-Xudong Han, Aili Shen, Yitong Li, Lea Frermann, Timothy Baldwin, and Trevor Cohn. 2022. Towards Fair Dataset Distillation for Text Classification. In Proceedings of The Third Workshop on Simple and Efficient Natural Language Processing (SustaiNLP), pages 65–72, Abu Dhabi, United Arab Emirates (Hybrid). Association for Computational Linguistics.
+```
+@inproceedings{han-etal-2022-towards-fair,
+    title = "Towards Fair Dataset Distillation for Text Classification",
+    author = "Han, Xudong  and
+      Shen, Aili  and
+      Li, Yitong  and
+      Frermann, Lea  and
+      Baldwin, Timothy  and
+      Cohn, Trevor",
+    booktitle = "Proceedings of The Third Workshop on Simple and Efficient Natural Language Processing (SustaiNLP)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.sustainlp-1.13",
+    pages = "65--72",
+    abstract = "With the growing prevalence of large-scale language models, their energy footprint and potential to learn and amplify historical biases are two pressing challenges. Dataset distillation (DD) {---} a method for reducing the dataset size by learning a small number of synthetic samples which encode the information in the original dataset {---} is a method for reducing the cost of model training, however its impact on fairness has not been studied. We investigate how DD impacts on group bias, with experiments over two language classification tasks, concluding that vanilla DD preserves the bias of the dataset. We then show how existing debiasing methods can be combined with DD to produce models that are fair and accurate, at reduced training cost.",
+}
+
+```
 
 ## Overview
 
